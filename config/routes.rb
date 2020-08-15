@@ -3,4 +3,4 @@ Rails.application.routes.draw do
   resources :products
 end
 
-# fetch('http://localhost:3000/products')
+
