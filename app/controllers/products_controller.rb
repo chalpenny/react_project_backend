@@ -9,5 +9,11 @@ class ProductsController < ApplicationController
         product = Product.find_by_id(id: params[:id])
         render json: product
     end
+
+    def update
+        product = Product.find_by_id(id: params[:id])
+        render json: product
+    end
+
     
 end
