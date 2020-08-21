@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_08_051244) do
+ActiveRecord::Schema.define(version: 2020_08_21_045556) do
 
   create_table "products", force: :cascade do |t|
     t.string "name"
@@ -21,9 +21,9 @@ ActiveRecord::Schema.define(version: 2020_08_08_051244) do
     t.integer "max_atmosphering_speed"
     t.integer "crew"
     t.integer "passengers"
-    t.boolean "available"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.boolean "available", default: true
   end
 
 end

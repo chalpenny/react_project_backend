@@ -9,7 +9,6 @@ class CreateProducts < ActiveRecord::Migration[6.0]
 	    t.integer :max_atmosphering_speed
 	    t.integer :crew
       t.integer :passengers
-      t.boolean :available
 
       t.timestamps
     end
