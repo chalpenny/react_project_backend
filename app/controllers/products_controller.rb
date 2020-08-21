@@ -11,7 +11,8 @@ class ProductsController < ApplicationController
     end
 
     def update
-        product = Product.find_by_id(id: params[:id])
+        product = Product.find(params[:id])
+        product.available = params[:available]
         render json: product
     end
 
