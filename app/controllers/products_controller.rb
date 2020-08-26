@@ -13,6 +13,7 @@ class ProductsController < ApplicationController
     def update
         product = Product.find(params[:id])
         product.available = params[:available]
+        product.save
         render json: product
     end
 
